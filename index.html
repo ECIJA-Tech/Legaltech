@@ -98,7 +98,10 @@
       letter-spacing: 1.5px; text-transform: uppercase; color: #575757; padding: 10px 28px; transition: all 0.2s;
     }
     .exp-tab.active { background: #101010; border-color: #101010; color: white; }
-    .exp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .exp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+    .exp-grid.intl { grid-template-columns: repeat(3, 1fr); }
+    .map-frame { border: 1px solid #e5e5e5; background: #fff; padding: 1.25rem; }
+    .map-frame img { width: 100%; height: auto; display: block; }
     .case { background: white; border-top: 3px solid #C9251C; padding: 1.5rem; display: flex; flex-direction: column; }
     .case .tag { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #C9251C; display: block; margin-bottom: 10px; }
     .case h3 { font-weight: 500; font-size: 14px; color: #101010; margin-bottom: 10px; line-height: 1.4; }
@@ -199,7 +202,7 @@
       .mobile-menu-btn { display: flex !important; }
       .hero-stats { flex-wrap: wrap; row-gap: 1.5rem; }
       .stat { flex: 1 1 40%; border-right: 0; margin-right: 0; }
-      .sol-grid, .exp-grid, .contact-grid, .flow-grid { grid-template-columns: 1fr !important; }
+      .sol-grid, .exp-grid, .exp-grid.intl, .contact-grid, .flow-grid { grid-template-columns: 1fr !important; }
       .method-grid { grid-template-columns: 1fr 1fr !important; }
       .soft-grid, .soft-grid.power { grid-template-columns: 1fr 1fr !important; max-width: none; }
       .person { align-items: flex-start; }
@@ -321,7 +324,7 @@
       <div class="soft-block">
         <span class="eyebrow">Software partners</span>
         <h3>Herramientas con las que implementamos</h3>
-        <p class="soft-lead">Seleccionamos e integramos las plataformas de IA legal y el ecosistema Microsoft Power Platform que mejor encajan en cada operación. No vendemos licencias: diseñamos el stack correcto sobre la infraestructura del cliente.</p>
+        <p class="soft-lead">Seleccionamos e integramos las plataformas de IA legal y el ecosistema Microsoft Power Platform que mejor encajan en cada operación. Diseñamos el stack correcto sobre la infraestructura del cliente.</p>
 
         <div class="soft-group">
           <span class="soft-label">IA legal</span>
@@ -377,10 +380,17 @@
             <p>Un equipo de práctica especializada desarrolló un proceso repetible para transformar resoluciones de organismos reguladores en guías interactivas accesibles para clientes y equipos internos.</p>
             <div class="result"><span>Resultado</span><p>Proceso escalable que reduce el tiempo de interpretación y comunicación de regulación compleja.</p></div>
           </article>
+          <article class="case">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9251C" stroke-width="1.5" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/><ellipse cx="18" cy="18" rx="3.5" ry="1.4"/><path d="M14.5 18v2.2c0 .8 1.6 1.4 3.5 1.4s3.5-.6 3.5-1.4V18"/></svg>
+            <span class="tag">LegalTech &amp; Plataformas</span>
+            <h3>Plataforma a medida de gestión de plantillas</h3>
+            <p>Diseñamos e implementamos una plataforma propia de gestión de plantillas vinculada al DMS y a la base de datos del cliente, para centralizar versiones, variables y la generación controlada de documentos.</p>
+            <div class="result"><span>Resultado</span><p>Drafting más rápido, plantillas unificadas y trazabilidad entre el repositorio documental y los datos maestros del cliente.</p></div>
+          </article>
         </div>
       </div>
       <div class="panel" id="exp-internacional">
-        <div class="exp-grid">
+        <div class="exp-grid intl">
           <article class="case intl">
             <div class="logo-row"><img src="assets/logos/iberdrola.png" alt="Iberdrola"></div>
             <span class="tag">LegalTech &amp; Plataformas</span>
@@ -397,6 +407,17 @@
             <p>Optimización de la gestión de seguros y documentación legal para la principal cervecera española.</p>
           </article>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="alcance">
+    <div class="wrap">
+      <span class="eyebrow">Alcance global</span>
+      <h2>Presencia de ECIJA en el mundo</h2>
+      <p style="font-size:14px;line-height:1.75;margin-bottom:2rem;max-width:720px;">La red ECIJA opera en 18 países y 37 oficinas. Este mapa resume el alcance geográfico desde el que respaldamos cada proyecto de ECIJA Tech.</p>
+      <div class="map-frame">
+        <img src="assets/mapa-ecija.jpg" alt="Mapa de oficinas ECIJA en el mundo" width="1400" height="779">
       </div>
     </div>
   </section>
